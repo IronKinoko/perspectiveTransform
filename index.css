@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  text-align: center;
+}
+
+.editor {
+  position: relative;
+}
+
+.drag-point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  cursor: grab;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  user-select: none;
+  line-height: 20px;
+}
